@@ -5,6 +5,8 @@ import java.time.Duration;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
+import com.ecom_automation.pageobjects.AddToCartPage;
+
 
 
 public class Base {
@@ -21,6 +23,7 @@ public class Base {
 		  
 		  return driver;
 	 }
+
 	 
 	 
 	 

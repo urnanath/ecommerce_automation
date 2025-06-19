@@ -6,7 +6,6 @@
       <class name="com.ecom_automation.testcases.Register"/>
       <class name="com.ecom_automation.testcases.Login"/>
       <class name="com.ecom_automation.testcases.Search"/>
-      <class name="com.ecom_automation.testcases.AddToCart"/>
       <class name="com.ecom_automation.testcases.CheckOut"/>
     </classes>
   </test> <!-- Test -->

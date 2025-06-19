@@ -15,7 +15,7 @@ import com.ecom_automation.pageobjects.AddToCartPage;
 import com.ecom_automation.pageobjects.CheckOutPage;
 import com.ecom_automation.pageobjects.HomePage;
 
-public class CheckOut extends Base{
+public class CheckOut extends Base {
 
     WebDriver driver;
 	
@@ -48,6 +48,7 @@ public class CheckOut extends Base{
 		addToCartPage.clearProductQty();
 		addToCartPage.selectProductQty();
 		addToCartPage.clickOnAddToCartButton();
+
 		
 
 		Thread.sleep(2000);
@@ -77,7 +78,6 @@ public class CheckOut extends Base{
     	
     	Thread.sleep(3000);
     	checkOutPage.clickOnPlaceOrderButton();
-//    	driver.findElement(By.className("checkout")).click();
     	
     	
     }
