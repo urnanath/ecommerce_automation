@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="E_commerce App Automation Suite">
+  <test  name="E_commerce App Testcases">
+    <classes>
+      <class name="com.ecom_automation.testcases.Register"/>
+      <class name="com.ecom_automation.testcases.Login"/>
+      <class name="com.ecom_automation.testcases.Search"/>
+      <class name="com.ecom_automation.testcases.AddToCart"/>
+      <class name="com.ecom_automation.testcases.CheckOut"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

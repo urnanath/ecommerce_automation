@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [E_commerce App Automation Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="E_commerce App Testcases(failed)">
+    <classes>
+      <class name="com.ecom_automation.testcases.CheckOut">
+        <methods>
+          <include name="setUp"/>
+          <include name="clickOnFullCartAndCheckOutWithOutSigningIn"/>
+        </methods>
+      </class> <!-- com.ecom_automation.testcases.CheckOut -->
+    </classes>
+  </test> <!-- E_commerce App Testcases(failed) -->
+</suite> <!-- Failed suite [E_commerce App Automation Suite] -->
