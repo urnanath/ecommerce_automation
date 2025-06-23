@@ -36,7 +36,12 @@ public class RegisterPage {
 	@FindBy(className = "primary")
 	private WebElement registerButton;
 	
-	public void registerWithRightCredentials() 
+
+	
+	@FindBy(className = "messages")
+	private WebElement message;
+	
+	public String registerWithRightCredentials() 
 	{
 		firstName.sendKeys("Bob");
 		lastName.sendKeys("Deol");
@@ -44,9 +49,11 @@ public class RegisterPage {
 		password.sendKeys("bob@1234");
 		passwordConfirmation.sendKeys("bob@1234");
 		registerButton.click();
+		
+		return message.getText();
 	}
 	
-	public void registerWithExistingCredentials() 
+	public String registerWithExistingCredentials() 
 	{
 		firstName.sendKeys("Bob");
 		lastName.sendKeys("Deol");
@@ -54,6 +61,8 @@ public class RegisterPage {
 		password.sendKeys("bob@1234");
 		passwordConfirmation.sendKeys("bob@1234");
 		registerButton.click();
+		
+		return message.getText();
 	}
 	
 	

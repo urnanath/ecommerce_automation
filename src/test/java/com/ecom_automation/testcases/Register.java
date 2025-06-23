@@ -1,6 +1,6 @@
 package com.ecom_automation.testcases;
 
-import org.openqa.selenium.By;
+
 import org.openqa.selenium.WebDriver;
 
 import org.testng.Assert;
@@ -33,8 +33,7 @@ public class Register extends Base {
 	  public void verifyRegisterWithAllFields()
 	  {
 		  RegisterPage registerPage = new RegisterPage(driver);
-		  registerPage.registerWithRightCredentials();
-		  String actualSuccessMessage = driver.findElement(By.className("messages")).getText();
+		  String actualSuccessMessage = registerPage.registerWithRightCredentials();
 		  Assert.assertEquals(actualSuccessMessage,"Thank you for registering with Main Website Store.");
 	  }
 	  
@@ -43,10 +42,8 @@ public class Register extends Base {
 	  {
 		  RegisterPage registerPage = new RegisterPage(driver);
 		  
-		  registerPage.registerWithExistingCredentials();
-		  
-		  
-		  String actualWarningMessage = driver.findElement(By.className("messages")).getText();
+		  String actualWarningMessage = registerPage.registerWithExistingCredentials();
+
 		  Assert.assertEquals(actualWarningMessage,"There is already an account with this email address. If you are sure that it is your email address, click here to get your password and access your account.");
 	  }
 	  
