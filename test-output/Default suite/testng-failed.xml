@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.ecom_automation.testcases.CheckOut">
+      <class name="com.ecom_automation.testcases.Login">
         <methods>
-          <include name="tearDown"/>
+          <include name="verifyLoginWithInalidCredentials"/>
           <include name="setUp"/>
-          <include name="clickOnFullCartAndCheckOutWithOutSigningIn"/>
+          <include name="tearDown"/>
         </methods>
-      </class> <!-- com.ecom_automation.testcases.CheckOut -->
+      </class> <!-- com.ecom_automation.testcases.Login -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

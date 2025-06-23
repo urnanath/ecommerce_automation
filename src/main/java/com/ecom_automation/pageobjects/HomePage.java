@@ -48,9 +48,11 @@ public class HomePage
 	{
 		showCart.click();
 	}
+	
 	public String showEmptyCartMsg() {
 		return noItemsInCartMsg.getText();
 	}
+	
 	public void clickOnProceedToCheckOutButton()
 	{
 		proceedToCheckOutButton.click();

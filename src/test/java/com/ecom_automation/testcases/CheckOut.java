@@ -1,10 +1,8 @@
 package com.ecom_automation.testcases;
 
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
-import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -42,14 +40,8 @@ public class CheckOut extends Base {
 	public void clickOnFullCartAndCheckOutWithOutSigningIn() throws InterruptedException {
 		
 		AddToCartPage addToCartPage = new AddToCartPage(driver);
-		addToCartPage.clickOnProductItem();
-		addToCartPage.selectProductSize();
-		addToCartPage.selectProductColor();
-		addToCartPage.clearProductQty();
-		addToCartPage.selectProductQty();
-		addToCartPage.clickOnAddToCartButton();
+		addToCartPage.addProductToCart();
 
-		
 
 		Thread.sleep(2000);
 		
@@ -60,24 +52,7 @@ public class CheckOut extends Base {
     	Thread.sleep(2000);
     	CheckOutPage checkOutPage = new CheckOutPage(driver);
     	
-    	checkOutPage.enterEmail();
-    	checkOutPage.enterFirstName();
-    	checkOutPage.enterLastName();
-    	Select country = new Select(driver.findElement(By.name("country_id")));
-    	country.selectByContainsVisibleText("India");
-    	
-    	Select state = new Select(driver.findElement(By.name("region_id")));
-    	state.selectByContainsVisibleText("West Bengal");
-    	checkOutPage.enterAddress();
-    	checkOutPage.enterCity();
-    	checkOutPage.enterPinCoode();
-    	checkOutPage.enterPhNumber();
-    	checkOutPage.clickOnRadioButton();
-
-    	checkOutPage.clickOnNextButton();
-    	
-    	Thread.sleep(3000);
-    	checkOutPage.clickOnPlaceOrderButton();
+    	checkOutPage.checkOut();
     	
     	
     }

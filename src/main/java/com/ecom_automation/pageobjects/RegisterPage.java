@@ -36,27 +36,27 @@ public class RegisterPage {
 	@FindBy(className = "primary")
 	private WebElement registerButton;
 	
-	public void enterFirstName() {
+	public void registerWithRightCredentials() 
+	{
 		firstName.sendKeys("Bob");
-	}
-	public void enterLastName() {
 		lastName.sendKeys("Deol");
-	}
-	public void enterEmail() {
 		email.sendKeys(generateEmailWithTimestamp());
-	}
-	public void enterExistingEmail() {
-		email.sendKeys("janedoe1234@gmail.com");
-	}
-	public void enterPassword() {
 		password.sendKeys("bob@1234");
-	}
-	public void enterConfirmedPassword() {
 		passwordConfirmation.sendKeys("bob@1234");
-	}
-	public void clickOnRegisterButton() {
 		registerButton.click();
 	}
+	
+	public void registerWithExistingCredentials() 
+	{
+		firstName.sendKeys("Bob");
+		lastName.sendKeys("Deol");
+		email.sendKeys("janedoe1234@gmail.com");
+		password.sendKeys("bob@1234");
+		passwordConfirmation.sendKeys("bob@1234");
+		registerButton.click();
+	}
+	
+	
 	
 	public static String generateEmailWithTimestamp() 
 	  {

@@ -18,7 +18,7 @@ public class Base {
 		 
 		  driver = new ChromeDriver();
 		  driver.manage().window().maximize();
-		  driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+		  driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 		  driver.get("https://magento.softwaretestingboard.com/?ref=hackernoon.com");
 		  
 		  return driver;

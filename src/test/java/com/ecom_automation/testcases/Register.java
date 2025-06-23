@@ -1,5 +1,4 @@
 package com.ecom_automation.testcases;
-import java.util.Date;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -34,14 +33,7 @@ public class Register extends Base {
 	  public void verifyRegisterWithAllFields()
 	  {
 		  RegisterPage registerPage = new RegisterPage(driver);
-		  registerPage.enterFirstName();
-		  registerPage.enterLastName();
-		  registerPage.enterEmail();
-		  registerPage.enterPassword();
-		  registerPage.enterConfirmedPassword();
-
-		  registerPage.clickOnRegisterButton();
-		  
+		  registerPage.registerWithRightCredentials();
 		  String actualSuccessMessage = driver.findElement(By.className("messages")).getText();
 		  Assert.assertEquals(actualSuccessMessage,"Thank you for registering with Main Website Store.");
 	  }
@@ -51,13 +43,7 @@ public class Register extends Base {
 	  {
 		  RegisterPage registerPage = new RegisterPage(driver);
 		  
-		  registerPage.enterFirstName();
-		  registerPage.enterLastName();
-		  registerPage.enterExistingEmail();;
-		  registerPage.enterPassword();
-		  registerPage.enterConfirmedPassword();
-
-		  registerPage.clickOnRegisterButton();
+		  registerPage.registerWithExistingCredentials();
 		  
 		  
 		  String actualWarningMessage = driver.findElement(By.className("messages")).getText();

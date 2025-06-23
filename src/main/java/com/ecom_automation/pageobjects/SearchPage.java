@@ -17,16 +17,24 @@ public class SearchPage {
 	@FindBy(name = "q")
 	private WebElement searchBar;
 	
+	@FindBy(linkText = "Radiant Tee")
+	private WebElement product;
 	
-	public void enterExistingProductNameInSearchBar() {
+	@FindBy(className = "notice")
+	private WebElement notice;
+	
+	public WebElement enterExistingProductNameInSearchBar() {
 		searchBar.sendKeys("Radiant Tee");
-	}
-	public void enterNonExistingProductNameInSearchBar() {
-		searchBar.sendKeys("honda");
-	}
-	public void pressEnter()
-	{
 		searchBar.sendKeys(Keys.ENTER);
+		
+		return product;
 	}
+	public String enterNonExistingProductNameInSearchBar() {
+		searchBar.sendKeys("honda");
+		searchBar.sendKeys(Keys.ENTER);
+		
+		return notice.getText();
+	}
+	
 }
 	

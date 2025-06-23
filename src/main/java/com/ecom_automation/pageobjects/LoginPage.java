@@ -12,6 +12,8 @@ public class LoginPage {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
 	}
+	
+
 
 	@FindBy(id = "email")
 	private WebElement emailEntry;
@@ -22,24 +24,28 @@ public class LoginPage {
 	@FindBy(name = "send")
 	private WebElement signInButton;
 	
-	public void enterValidEmail() 
+	@FindBy(className = "logged-in")
+	private WebElement verification;
+	
+	@FindBy(className = "message-error")
+	private WebElement warning;
+	
+	public WebElement loginWithValidCredentials()
 	{
 		emailEntry.sendKeys("janedoe1234@gmail.com");
-	}
-	public void enterValidPassword()
-	{
 		passwordEntry.sendKeys("jane@123");
+
+		signInButton.click();
+		return verification;
 	}
-	public void enterInvalidEmail() 
+	
+	public String loginWithInvalidCredentials()
 	{
 		emailEntry.sendKeys("janedoe12@gmail.com");
-	}
-	public void enterInvalidPassword()
-	{
 		passwordEntry.sendKeys("jane@1");
-	}
-	public void clickOnSignInButton() 
-	{
+		
 		signInButton.click();
-	}
+		return warning.getText()
+;	}
+	
 }

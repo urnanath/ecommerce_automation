@@ -1,115 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="8" passed="8" failed="0" skipped="0">
+<testng-results ignored="1" total="2" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-06-20T00:41:53 IST" name="E_commerce App Automation Suite" finished-at="2025-06-20T00:43:35 IST" duration-ms="101695">
+  <suite started-at="2025-06-23T22:19:23 IST" name="Default suite" finished-at="2025-06-23T22:19:32 IST" duration-ms="8697">
     <groups>
     </groups>
-    <test started-at="2025-06-20T00:41:53 IST" name="E_commerce App Testcases" finished-at="2025-06-20T00:43:35 IST" duration-ms="101695">
-      <class name="com.ecom_automation.testcases.CheckOut">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.ecom_automation.testcases.CheckOut@6f4a47c7]" started-at="2025-06-20T00:43:03 IST" name="setUp" finished-at="2025-06-20T00:43:09 IST" duration-ms="6279" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="clickOnFullCartAndCheckOutWithOutSigningIn()[pri:1, instance:com.ecom_automation.testcases.CheckOut@6f4a47c7]" started-at="2025-06-20T00:43:09 IST" name="clickOnFullCartAndCheckOutWithOutSigningIn" finished-at="2025-06-20T00:43:26 IST" duration-ms="17446" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- clickOnFullCartAndCheckOutWithOutSigningIn -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.ecom_automation.testcases.CheckOut@6f4a47c7]" started-at="2025-06-20T00:43:26 IST" name="tearDown" finished-at="2025-06-20T00:43:27 IST" duration-ms="668" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.ecom_automation.testcases.CheckOut@6f4a47c7]" started-at="2025-06-20T00:43:27 IST" name="setUp" finished-at="2025-06-20T00:43:34 IST" duration-ms="7388" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="clickOnEmptyCart()[pri:2, instance:com.ecom_automation.testcases.CheckOut@6f4a47c7]" started-at="2025-06-20T00:43:34 IST" name="clickOnEmptyCart" finished-at="2025-06-20T00:43:35 IST" duration-ms="337" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- clickOnEmptyCart -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.ecom_automation.testcases.CheckOut@6f4a47c7]" started-at="2025-06-20T00:43:35 IST" name="tearDown" finished-at="2025-06-20T00:43:35 IST" duration-ms="478" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.ecom_automation.testcases.CheckOut -->
-      <class name="com.ecom_automation.testcases.Login">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.ecom_automation.testcases.Login@2002fc1d]" started-at="2025-06-20T00:42:19 IST" name="setUp" finished-at="2025-06-20T00:42:27 IST" duration-ms="7816" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="verifyLoginWithValidCredentials()[pri:1, instance:com.ecom_automation.testcases.Login@2002fc1d]" started-at="2025-06-20T00:42:27 IST" name="verifyLoginWithValidCredentials" finished-at="2025-06-20T00:42:31 IST" duration-ms="4132" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyLoginWithValidCredentials -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.ecom_automation.testcases.Login@2002fc1d]" started-at="2025-06-20T00:42:31 IST" name="tearDown" finished-at="2025-06-20T00:42:32 IST" duration-ms="528" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.ecom_automation.testcases.Login@2002fc1d]" started-at="2025-06-20T00:42:32 IST" name="setUp" finished-at="2025-06-20T00:42:40 IST" duration-ms="7954" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="verifyLoginWithInalidCredentials()[pri:2, instance:com.ecom_automation.testcases.Login@2002fc1d]" started-at="2025-06-20T00:42:40 IST" name="verifyLoginWithInalidCredentials" finished-at="2025-06-20T00:42:42 IST" duration-ms="2398" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyLoginWithInalidCredentials -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.ecom_automation.testcases.Login@2002fc1d]" started-at="2025-06-20T00:42:42 IST" name="tearDown" finished-at="2025-06-20T00:42:43 IST" duration-ms="501" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.ecom_automation.testcases.Login -->
-      <class name="com.ecom_automation.testcases.Register">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.ecom_automation.testcases.Register@1a677343]" started-at="2025-06-20T00:41:54 IST" name="setUp" finished-at="2025-06-20T00:42:04 IST" duration-ms="10004" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="verifyRegisterWithAllFields()[pri:1, instance:com.ecom_automation.testcases.Register@1a677343]" started-at="2025-06-20T00:42:04 IST" name="verifyRegisterWithAllFields" finished-at="2025-06-20T00:42:08 IST" duration-ms="4581" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyRegisterWithAllFields -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.ecom_automation.testcases.Register@1a677343]" started-at="2025-06-20T00:42:08 IST" name="tearDown" finished-at="2025-06-20T00:42:09 IST" duration-ms="532" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.ecom_automation.testcases.Register@1a677343]" started-at="2025-06-20T00:42:09 IST" name="setUp" finished-at="2025-06-20T00:42:16 IST" duration-ms="7165" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="verifyRegisterWithExistingEmail()[pri:2, instance:com.ecom_automation.testcases.Register@1a677343]" started-at="2025-06-20T00:42:16 IST" name="verifyRegisterWithExistingEmail" finished-at="2025-06-20T00:42:19 IST" duration-ms="2723" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyRegisterWithExistingEmail -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.ecom_automation.testcases.Register@1a677343]" started-at="2025-06-20T00:42:19 IST" name="tearDown" finished-at="2025-06-20T00:42:19 IST" duration-ms="576" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.ecom_automation.testcases.Register -->
+    <test started-at="2025-06-23T22:19:23 IST" name="Default test" finished-at="2025-06-23T22:19:32 IST" duration-ms="8697">
       <class name="com.ecom_automation.testcases.Search">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.ecom_automation.testcases.Search@69453e37]" started-at="2025-06-20T00:42:43 IST" name="setUp" finished-at="2025-06-20T00:42:48 IST" duration-ms="5935" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.ecom_automation.testcases.Search@1fa121e2]" started-at="2025-06-23T22:19:23 IST" name="setUp" finished-at="2025-06-23T22:19:30 IST" duration-ms="6758" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="verifySearchWithValidProductName()[pri:1, instance:com.ecom_automation.testcases.Search@69453e37]" started-at="2025-06-20T00:42:48 IST" name="verifySearchWithValidProductName" finished-at="2025-06-20T00:42:52 IST" duration-ms="3893" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifySearchWithValidProductName -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.ecom_automation.testcases.Search@69453e37]" started-at="2025-06-20T00:42:52 IST" name="tearDown" finished-at="2025-06-20T00:42:53 IST" duration-ms="534" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.ecom_automation.testcases.Search@69453e37]" started-at="2025-06-20T00:42:53 IST" name="setUp" finished-at="2025-06-20T00:42:59 IST" duration-ms="6467" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="verifySearchWithInalidProductName()[pri:2, instance:com.ecom_automation.testcases.Search@69453e37]" started-at="2025-06-20T00:42:59 IST" name="verifySearchWithInalidProductName" finished-at="2025-06-20T00:43:02 IST" duration-ms="2621" status="PASS">
+        <test-method signature="verifySearchWithInalidProductName()[pri:2, instance:com.ecom_automation.testcases.Search@1fa121e2]" started-at="2025-06-23T22:19:30 IST" name="verifySearchWithInalidProductName" finished-at="2025-06-23T22:19:32 IST" duration-ms="1582" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifySearchWithInalidProductName -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.ecom_automation.testcases.Search@69453e37]" started-at="2025-06-20T00:43:02 IST" name="tearDown" finished-at="2025-06-20T00:43:03 IST" duration-ms="564" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.ecom_automation.testcases.Search@1fa121e2]" started-at="2025-06-23T22:19:32 IST" name="tearDown" finished-at="2025-06-23T22:19:32 IST" duration-ms="304" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.ecom_automation.testcases.Search -->
-    </test> <!-- E_commerce App Testcases -->
-  </suite> <!-- E_commerce App Automation Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

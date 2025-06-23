@@ -4,6 +4,7 @@ package com.ecom_automation.testcases;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -36,10 +37,8 @@ public class Login extends Base{
   public void verifyLoginWithValidCredentials()
   {
 	  LoginPage loginPage = new LoginPage(driver);  
-	  loginPage.enterValidEmail();
-	  loginPage.enterValidPassword();
-	  loginPage.clickOnSignInButton();
-	  Assert.assertTrue(driver.findElement(By.className("logged-in")).isDisplayed());
+	  WebElement verify = loginPage.loginWithValidCredentials();
+	  Assert.assertTrue(verify.isDisplayed());
 
   }
   
@@ -47,11 +46,8 @@ public class Login extends Base{
   public void verifyLoginWithInalidCredentials()
   {
 	  LoginPage loginPage = new LoginPage(driver);  
-	  loginPage.enterInvalidEmail();
-	  loginPage.enterInvalidPassword();
-	  loginPage.clickOnSignInButton();
-	  String actualWarningMessage = driver.findElement(By.className("message-error")).getText();
-	  Assert.assertEquals(actualWarningMessage, "The account sign-in was incorrect or your account is disabled temporarily. Please wait and try again later.");
+	  String actualWarningMsg = loginPage.loginWithInvalidCredentials();
+	  Assert.assertEquals(actualWarningMsg, "The account sign-in was incorrect or your account is disabled temporarily. Please wait and try again later.");
 	  
 
   }

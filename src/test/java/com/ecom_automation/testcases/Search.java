@@ -2,6 +2,7 @@ package com.ecom_automation.testcases;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -30,9 +31,9 @@ public class Search extends Base {
 	  public void verifySearchWithValidProductName()
 	  {
 		 SearchPage searchPage = new SearchPage(driver);
-		 searchPage.enterExistingProductNameInSearchBar();
-		 searchPage.pressEnter();
-		 Assert.assertTrue(driver.findElement(By.linkText("Radiant Tee")).isDisplayed());
+		 WebElement product = searchPage.enterExistingProductNameInSearchBar();
+	
+		 Assert.assertTrue(product.isDisplayed());
 	  
 	  }
 	 
@@ -41,7 +42,6 @@ public class Search extends Base {
 	  {
 		 SearchPage searchPage = new SearchPage(driver);
 		 searchPage.enterNonExistingProductNameInSearchBar();
-		 searchPage.pressEnter();
 
 		 String actualNoticeMessage = driver.findElement(By.className("notice")).getText();
 		 Assert.assertEquals(actualNoticeMessage, "Your search returned no results.");

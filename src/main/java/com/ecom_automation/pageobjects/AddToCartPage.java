@@ -30,30 +30,17 @@ public class AddToCartPage {
 	@FindBy(id = "product-addtocart-button")
 	WebElement addToCartButton;
 	
-	public void clickOnProductItem()
+	public void addProductToCart() 
 	{
 		productItem.click();
-	}
-	public void selectProductSize()
-	{
 		productSize.click();
-	}
-	public void selectProductColor()
-	{
 		productColor.click();
-	}
-	public void selectProductQty()
-	{
-		productQty.sendKeys("2");
-	}
-	public void clearProductQty()
-	{
 		productQty.clear();
-	}
-	public void clickOnAddToCartButton()
-	{
+		productQty.sendKeys("2");
 		addToCartButton.click();
 	}
+	
+	
 	
 }
 
